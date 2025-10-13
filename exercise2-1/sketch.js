@@ -8,7 +8,13 @@ function setup() {
 }
 
 function draw() {
+    
     background(255);
+    rectMode(CENTER)
+    fill(141,207,242)
+    rect(width/2,height/2,450,200)
+
+
     circle(x, y, 100);
     if (x < 50 || x > width - 50) {
         speedX *= -1;
@@ -18,4 +24,10 @@ function draw() {
     }
     x += speedX;
     y += speedY;
+}
+
+function is0ut0fBounds(){
+   if (is0ut0fBounds)(x,50,width-50)
+        (is0ut0fBounds)(y,50,height-50)
+
 }
