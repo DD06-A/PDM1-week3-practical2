@@ -1,15 +1,33 @@
 function setup() {
-    createCanvas(400, 300);
-    noStroke();
+  createCanvas(400, 300);
+  noStroke();
+    frameRate(1); // Draw once per second
+}
+
+let star2X = 100;
+let star3X = 100;
+let starY2 = 150;
+let starY3 = 300;
+
+
+
+function star(x, y) {
+  fill(255, 234, 0);
+  triangle(x, y - 50, x - 20, y, x + 20, y);
+  triangle(x - 50, y - 20, x, y - 20, x, y + 10);
+  triangle(x + 50, y - 20, x, y - 20, x, y + 10);
+  triangle(x - 20, y - 5, x, y + 10, x - 35, y + 30);
+  triangle(x, y + 10, x + 20, y - 5, x + 35, y + 30);
 }
 
 function draw() {
-    background(0, 0, 50);
-    fill(255, 234, 0);
-    triangle(width / 2, height / 2 - 50, width / 2 - 20, height / 2, width / 2 + 20, height / 2);
-    triangle(width / 2 - 50, height / 2 - 20, width / 2, height / 2 - 20, width / 2, height / 2 + 10);
-    triangle(width / 2 + 50, height / 2 - 20, width / 2, height / 2 - 20, width / 2, height / 2 + 10);
-    triangle(width / 2 - 20, height / 2 - 5, width / 2, height / 2 + 10, width / 2 - 35, height / 2 + 30);
-    triangle(width / 2, height / 2 + 10, width / 2 + 20, height / 2 - 5, width / 2 + 35, height / 2 + 30);
-
+  background(0, 0, 50);
+star(100,200);
+star(star2X,starY2);
+star(star3X,starY3);
 }
+
+/**
+ *
+* /@param 
+ */
